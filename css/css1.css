@@ -1,0 +1,74 @@
+/* Selector universal "*" */
+
+/* * {
+    padding: 0;
+    margin: 0;
+} */
+
+/* Selector */
+main {
+    border: 2px dotted goldenrod;
+}
+
+/* selector por id */
+#SegundoTexto {
+    color: dodgerblue;
+    border-bottom: 6px groove blueviolet;
+    border-top: 6px groove blueviolet
+}
+
+/* selector de clase */
+.titulo {
+    border: 1px solid black;
+    box-shadow: 10px 5px 5px palegreen;
+}
+
+/* selector de clase de un tag en particular */
+
+h3.titulo {
+    font-size: 100px;
+}
+
+/* Selector por atributo. No importa el valor que tenga el atributo */
+
+p[lang = "en"] {
+    background-color: rgb(38, 0, 255);
+}
+
+/* Selector por atributo buscando un texto al final */
+
+a[href*="pagina"] {
+    background-color: brown;
+}
+a[href$="mx"] {
+    background-color: gold;
+}
+
+[class~="round"] {
+    border-radius: 10px ;
+} 
+
+/* Selectores de lista 
+a, .titulo, [lang] {
+    color: blue;
+}
+*/
+
+/* Selector de descendencia
+
+main p {
+    border: 3px solid red;
+}
+*/
+
+/* Selector de hijo directo
+
+main > p {
+    border: 8px solid blue;
+}
+*/
+
+/* Hermanos adyacentes en cualquier parte de la pagina */
+h3 + p {
+    background-color: aqua;
+}
